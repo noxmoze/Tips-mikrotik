@@ -1,0 +1,3 @@
+/ip firewall filter add chain=input action=log log-prefix="INCOMING " comment="Log Incoming Packets"
+/ip firewall filter add chain=output action=log log-prefix="OUTGOING " comment="Log Outgoing Packets"
+/ip firewall filter add chain=forward action=log log-prefix="FORWARD " comment="Log Forwarded Packets"
